@@ -74,6 +74,7 @@
       box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.5);
     }
     .card h1 {
+      /* background-color: red; */
       font-size: 2em;
       font-family: "Open Sans";
       text-align: center; 
@@ -93,14 +94,7 @@
       width: 20%;
       min-width: 300px;
     }
-    .card-inner {
-      max-width: 1000px; 
-      display: flex; 
-      flex-wrap: wrap; 
-      justify-content: center;
-      padding: 1%;
-      margin: auto;
-    }
+    
     .subcard {
       width: 30%; 
       min-width: 300px;
@@ -110,9 +104,11 @@
       box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
     }
     .subcard img {
+      /* background-color: red; */
+      border: 10px black;
       object-fit: cover; 
       height: 200px; 
-      width: 300px;
+      width: 100%;
       display: block;
       margin: auto;
     }
@@ -155,6 +151,90 @@
       margin-bottom: 5px; 
       image-rendering: pixelated;
     }
+    .card-inner {
+      max-width: 1000px; 
+      display: flex; 
+      flex-wrap: wrap; 
+      justify-content: center;
+      padding: 1%;
+      margin: auto;
+    }
+
+
+    /* Here */
+    .card-inner-job {
+      /* background-color: red; */
+      max-width: 2000px; 
+      display: flex; 
+      flex-wrap: wrap; 
+      justify-content: center;
+      padding: 1%;
+
+      margin: auto;
+    }
+
+    .Cards{
+      display: flex;
+      flex-direction: column;;
+      background-color: rgb(199, 199, 199);
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+      height: 270px;
+      width: 400px;
+      margin: 6px;
+    }
+    .image{
+      height: 270px;
+      width: 100%;
+    }
+    .img {
+      background-color: rgb(199, 199, 199);
+      width: 99%;
+      height: 100%;
+      padding: 2px;
+      margin-top: -22px;
+      border-radius: 20px 20px 5px 5px;
+      /* padding-top: -10px; */
+    }
+
+    .Company{
+      margin-top: -15px;
+      margin-left: 10px;
+      font-size: 30px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .Description{
+      margin-top: -15px;
+      margin-left: 13px;
+      font-size: 15px;
+      /* font-family: Helvetica, sans-serif;
+      font-family: cursive; */
+      font-family: ui-monospace; 
+    }
+
+    .Descriptionx{
+      margin-top: -15px;
+      margin-left: 50%;
+      font-size: 15px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      padding-top: 10px;
+      padding-bottom: -40px;
+      font-family: ui-monospace; 
+    }
+    .JobDescription{
+      margin-left: 5px;
+      list-style-position: inside;
+    }
+    ul.a {
+     list-style-position: initial;
+     margin-right: 10px;
+     margin-left: 5px;
+     margin-bottom: -23px;
+    }
+
+    
+
   </style>
 </head>
 
@@ -177,20 +257,28 @@
       </div> -->
     </div>
     <div class="dropdown"> 
+      <a class="dropdown-button" href="#Jobs">Job Experience</a>
+      <!-- <div class="dropdown-content">
+        <a href="#">Games</a>
+        <a href="#">Web Apps</a>
+      </div> -->
+    </div>
+    <div class="dropdown"> 
       <a class="dropdown-button" href="#projects">Projects</a>
       <!-- <div class="dropdown-content">
         <a href="#">Games</a>
         <a href="#">Web Apps</a>
       </div> -->
     </div>
+    
     <a class="contact-button" href="#contact">Contact</a>
   </div>
 
   <!-- BIG NAME -->
   <h1 class="big-name" style="margin-top: 5px;" >Ulises Martinez</h1>
   <hr style="width: 30%; border-top: 2px solid white;">
-  <h2 class="subtitles">Software Engineer • Web Dev • UX</h2>
-  <h2 class="subtitles" style="margin-top: 170px;">Based in SF</h2>
+  <h2 class="subtitles" style="margin-top: 40px;">Software Engineer • Web Dev • UX</h2>
+  <h2 class="subtitles" style="margin-top: 170px; color: transparent">.</h2>
   
 
   <a class="arrow-button" href="#about" style="color: white;">▼</a>
@@ -202,14 +290,13 @@
     <hr>
 
     <div class="card-inner">
-      <div style="width: 20%; min-width: 250px; display: block; margin: 2%" "="">
+      <div style="width: 20%; min-width: 250px; display: block; margin: 2%">
         <img src="UM%20-%20Welcome!_files/professional-pic-2-square.jpg" style="width: 100%; border-radius: 50%;">
       </div>
       <div style="width: 40%; min-width: 500px; display: block;">
-        <p>Hi, I'm Ulises Martinez! I'm a programmer, currently graduated from San Francisco State University.</p>
+        <p>Hi, I'm Ulises Martinez! I'm Software Developer. I graduated from San Francisco State University.</p>
         <p>I'm fascinated with computers and what technology can do for people.</p>
-        <p>I'm especially interested in web development and all the 
-aspects that go into it — programming, gameplay, art, and sound design.</p>
+        <p>I'm especially interested in Web Development, Data Science, and Mobile Development</p>
       </div>
     </div>  
 
@@ -220,35 +307,133 @@ aspects that go into it — programming, gameplay, art, and sound design.</p>
     <a class="arrow-button" href="#projects">▼</a>
   </div>
 
-  <!-- PROJECTS -->
-  <a id="projects"></a>
+
+  <a id="Jobs"></a>
   <div class="card">
-    <h1>Projects</h1>
+    <h1>Job Experience</h1>
     <hr>
-    <div class="card-inner">
-      <a class="subcard" href="https://github.com/gasper94/Dormy" target="_blank">
-        <div class="subcard-cover"><p>Go to Page</p></div>
-        <img style="width: 290px;" src="UM%20-%20Welcome!_files/garactic.jpg">
-        <h1>Dormy - Home Rental Services<br>(JS/Node/AWS)</h1>
-        <!-- <p>Galactic Mail was built by a friend and me, using base code from Tank Game. Avoid asteroids and safely deliver mail to all the moons in the galaxy! Try to beat the high score!</p> -->
-      </a>
+    <!-- NEW -->
+    <div class="card-inner-job">
+      <div class="cardx">
+        <div class="mediaCardx">
+          <img class="img" src="UM%20-%20Welcome!_files/Foundry_College.jpg">
+        </div>
+        <div class="bottomCardx">
+          <h2 class="Company">Company: Foundry College</h2>
+          <h2 class="Description">Job Title: FRONT-END DEVELOPER</h2>
+          <p class="bottomTextx">
+            <ul class="a" >
+              <li>Gathered and validated the video player functionality to help improve user experience of the system’s user interface before the active phase of development.</li>
+              <li>Created a single page application (SPA) with the video player prototype with stable and maintainable components using ReactJS, HTML, and CSS to target all major browsers and creating a seamless experience for over 1,000 students.</li>
+              <li>Worked with third party libraries to enhance the video player functionality to sync the video’s audio to a transcript obtained from AWS Transcribe. In addition, added extra functionalities to allow words to be searched and iterated.</li>
+              <li>Worked with Senior Software Engineer to integrate the video player page into the existing company’s website application.</li>
+          </ul>
+          </p>
+          <div class="actionsCardx">
+            <h5 class="Descriptionx">Date: May 2020 to Present </h5>
+          </div>
+        </div>
+      </div>
 
-      <a class="subcard" href="https://github.com/gasper94/NearBites" target="_blank">
-        <div class="subcard-cover"><p>Go to Page</p></div>
-        <img style="width: 290px;" src="UM%20-%20Welcome!_files/nearbites.jpg">
-        <h1>NearBites<br>(HTML/CSS/JS)</h1>
-      </a>
+      <div class="cardx">
+        <div class="mediaCardx">
+          <img class="img" src="UM%20-%20Welcome!_files/clear_labs.png">
+        </div>
+        <div class="bottomCardx">
+          <h2 class="Company">Company: Clear Labs</h2>
+          <h2 class="Description">Job Title: SOFTWARE ENGINEER INTERN</h2>
+          <p class="bottomTextx">
+            <ul class="a" >
+              <li>Worked with Senior Software Engineer on planning, researching, and migrating the existing company’s website application to a
+                desktop application for field technicians to use.</li>
+              <li>Conducted Behavior Driven Testing with major applications features using Selenium to allow employees to contribute feedback
+                to the development process.</li>
+              <li>Debugged production issues across services and multiple levels of the stack such as user authentication functionality and
+                cross-platform usability.</li>
+                <li>Participated in weekly Agile meetings and peer code reviews to maintain high quality code.
+                </li>
+          </ul>
+          </p>
+          <div class="actionsCardx">
+            <h5 class="Descriptionx">Date: January 2020 to April 2020</h5>
+          </div>
+        </div>
+      </div>
 
-      <a class="subcard" href="https://github.com/gasper94/Tank-Game" target="_blank">
-        <div class="subcard-cover"><p>Go to Page</p></div>
-        <img style="width: 290px;" src="UM%20-%20Welcome!_files/tankugamu2.jpg">
-        <h1>Multiplayer Tank Game<br>Java(Eclipse)</h1>
-        <!-- <p>Tank Game was built by a friend and me. Battle against a friend(or enemy) in local multiplayer! Find powerups and blow up the other player's tank!</p> -->
-      </a>
+      <div class="cardx">
+        <div class="mediaCardx">
+          <img class="img" src="UM%20-%20Welcome!_files/Golden_Gate_Appliance.png">
+        </div>
+        <div class="bottomCardx">
+          <h2 class="Company">Company: Golden Gate Appliance Repair</h2>
+          <h2 class="Description">Job Title: WEBPAGE CONSULTANT</h2>
+          <p class="bottomTextx">
+            <ul class="a" >
+              <li>Developed a mock-up of the website featuring functionality that enabled customers and the owner to manage client accounts.</li>
+              <li>Positioned the owner to scale the site in line with business growth by using Firebase as a non-relational database platform.</li>
+              <li>Trained the business owner on the limitations and capabilities of the prototype, and of the features of static websites in order to identify a platform aligned with the unique needs of the company.</li>
+              
+          </ul>
+          </p>
+          <div class="actionsCardx">
+            <h5 class="Descriptionx">Date: January 2020 to April 2020</h5>
+          </div>
+        </div>
+      </div>
     </div>
-
     <a class="arrow-button" href="#contact">▼</a>
   </div>
+
+    <!-- PROJECTS -->
+    <a id="projects"></a>
+    <div class="card">
+      <h1>Projects</h1>
+      <hr>
+      <div class="card-inner">
+        <a class="subcard" href="https://github.com/gasper94/Dormy" target="_blank">
+          <div class="subcard-cover"><p>Go to Page</p></div>
+          <img style="width: 290px;" src="UM%20-%20Welcome!_files/garactic.jpg">
+          <h1>Dormy - Home Rental Services<br>(JS/Node/AWS)</h1>
+          <!-- <p>Galactic Mail was built by a friend and me, using base code from Tank Game. Avoid asteroids and safely deliver mail to all the moons in the galaxy! Try to beat the high score!</p> -->
+        </a>
+  
+        <a class="subcard" href="https://github.com/gasper94/Search-Functionality--React" target="_blank">
+          <div class="subcard-cover"><p>Go to Page</p></div>
+          <img style="width: 290px;" src="http://g.recordit.co/dYnN9d6w1A.gif">
+          <h1>Search Functionality<br>Java(Eclipse)</h1>
+          <!-- <p>Tank Game was built by a friend and me. Battle against a friend(or enemy) in local multiplayer! Find powerups and blow up the other player's tank!</p> -->
+        </a>
+  
+        <a class="subcard" href="https://github.com/gasper94/Tank-Game" target="_blank">
+          <div class="subcard-cover"><p>Go to Page</p></div>
+          <img style="width: 290px;" src="UM%20-%20Welcome!_files/tankugamu2.jpg">
+          <h1>Multiplayer Tank Game<br>Java(Eclipse)</h1>
+          <!-- <p>Tank Game was built by a friend and me. Battle against a friend(or enemy) in local multiplayer! Find powerups and blow up the other player's tank!</p> -->
+        </a>
+       
+        <a class="subcard" href="https://github.com/gasper94/NearBites" target="_blank">
+          <div class="subcard-cover"><p>Go to Page</p></div>
+          <img style="width: 290px; height: 570px;" src="http://g.recordit.co/gKpQlrYf9j.gif">
+          <h1>NearBites<br>(HTML/CSS/JS)</h1>
+        </a>
+        <a class="subcard" href="https://github.com/gasper94/TwitterApp" target="_blank">
+          <div class="subcard-cover"><p>Go to Page</p></div>
+          <img style="width: 290px; height: 570px;" src= "http://g.recordit.co/ZuUHoQny3u.gif" >
+          <h1>Twitter Clone<br>Swift(Ios)</h1>
+          <!-- <p>Tank Game was built by a friend and me. Battle against a friend(or enemy) in local multiplayer! Find powerups and blow up the other player's tank!</p> -->
+        </a>
+        <a class="subcard" href="https://github.com/gasper94/XaraminGalleryApp" target="_blank">
+          <div class="subcard-cover"><p>Go to Page</p></div>
+          <img style="width: 290px; height: 570px;" src= "http://g.recordit.co/emxABuwACU.gif" >
+          <h1>Car Collection<br>Xamarin(C#)</h1>
+          <!-- <p>Tank Game was built by a friend and me. Battle against a friend(or enemy) in local multiplayer! Find powerups and blow up the other player's tank!</p> -->
+        </a>
+      </div>
+  
+      <a class="arrow-button" href="#contact">▼</a>
+    </div>
+  
+  
 
   <!-- CONTACT -->
   <a id="contact"></a>
@@ -256,7 +441,7 @@ aspects that go into it — programming, gameplay, art, and sound design.</p>
     <h1>Contact Me</h1>
     <hr>
     <div class="contact-list">
-      <p>Need a project done, or looking for a capable intern?<br>Email me at <a href="mailto:ulimarmol94@gmail.com" target="_blank" class="link"><img src="UM%20-%20Welcome!_files/mail-icon2.png"><b> ulimarmol94@gmail.com</b></a> </p>
+      <p>Need a project done, or looking for a capable employee?<br>Email me at <a href="mailto:ulimarmol94@gmail.com" target="_blank" class="link"><img src="UM%20-%20Welcome!_files/mail-icon2.png"><b> ulimarmol94@gmail.com</b></a> </p>
       <p><a href="https://github.com/gasper94" target="_blank" class="link"><img src="UM%20-%20Welcome!_files/github-icon.png"> gasper94</a></p>
       <p><a href="https://www.linkedin.com/in/ulises-martinez/" target="_blank" class="link"><img src="UM%20-%20Welcome!_files/linkedin-icon.png"> ulises-martinez</a></p>
     </div>
