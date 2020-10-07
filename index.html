@@ -105,7 +105,7 @@
       min-width: 300px;
       padding: 1%;
       margin: 0.5%;
-      background-color: #fff5f5;
+      background-color: #e2e8f0;
       box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
     }
     .subcard img {
@@ -121,17 +121,27 @@
       font-size: 1.2em;
       opacity: 0.7;
     }
-    .subcard-cover {
+    .big-subcard-cover {
       display: none;
       float: top;
       position: absolute;
       background-color: rgba(0,0,0,0.2);
       z-index: 1;
+      height: 600px;
+      width: 250px;
+    }
+    
+    .subcard-cover {
+      display: none;
+      float: top;
+      position: absolute;
+      background-color: #edf2f7;
+      z-index: 1;
       height: 200px;
       width: 300px;
     }
     .subcard-cover p {
-      color: #eee;
+      color: #edf2f7;
     }
     .subcard:hover h1 {
       opacity: 1;
@@ -181,7 +191,7 @@
     .Cards{
       display: flex;
       flex-direction: column;;
-      background-color: #fff5f5;
+      background-color: #edf2f7;
       box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
       height: 270px;
       width: 400px;
@@ -192,7 +202,7 @@
       width: 100%;
     }
     .img {
-      background-color: #fff5f5;
+      background-color: #edf2f7;
       width: 99%;
       height: 100%;
       padding: 2px;
@@ -392,6 +402,7 @@
           </div>
         </div>
       </div>
+
     </div>
     <!-- <div class="flex ">
 
@@ -523,45 +534,85 @@
     <div class="card">
       <h1>Projects</h1>
       <hr>
-      <div class="card-inner">
-        <a class="subcard" href="https://github.com/gasper94/Dormy" target="_blank">
-          <div class="subcard-cover"><p>Go to Page</p></div>
+      <div class="flex flex-wrap justify-center">
+      <!-- <div class="flex flex-wrap justify-center sm:flex-col sm:justify-center">
+        <div class="min-w-2/3 p-2">
+          <div class="text-gray-700 text-center p-2">
+            <div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto my-8 sm:max-w-lg bg-gray-100">
+              <img class="w-full h-64" src="UM%20-%20Welcome!_files/garactic.jpg" alt="Sunset in the mountains">
+              <div class="px-6 py-4">
+                <div class="font-bold text-2xl text-left mb-2">Dormy - Home Rental Services</div>
+                <h5 class="text-gray-600 text-2xl text-left">
+                  Find local housing around campus, or rent your place if you're an homeowner.
+                </h5>
+              </div>
+              <div class="flex px-6 py-4">
+                <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#ReactJS</span>
+                <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#
+                  JavaScript
+                </span>
+                <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-600">#AWS</span>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+
+        <div class="subcard"  target="_blank">
+          <!-- <div class="subcard-cover"><p>Go to Page</p></div> -->
           <img style="width: 290px;" src="UM%20-%20Welcome!_files/garactic.jpg">
-          <h1>Dormy - Home Rental Services<br>(JS/Node/AWS)</h1>
-          <!-- <p>Galactic Mail was built by a friend and me, using base code from Tank Game. Avoid asteroids and safely deliver mail to all the moons in the galaxy! Try to beat the high score!</p> -->
-        </a>
+          <h1>Dormy - Home Rental<br>(JS/Node/AWS)</h1>
+          <div class="flex justify-center px-6 py-4">
+            <a href="https://github.com/gasper94/Dormy" class="bg-orange-500 rounded-lg px-3 py-1 text-md font-semibold text-white mr-2">Go to project</a>
+          </div>
+        </div>
   
-        <a class="subcard" href="https://github.com/gasper94/Search-Functionality--React" target="_blank">
-          <div class="subcard-cover"><p>Go to Page</p></div>
+        <div class="subcard"  target="_blank">
+          <!-- <div class="subcard-cover"><p>Go to Page</p></div> -->
           <img style="width: 290px;" src="UM%20-%20Welcome!_files/Search.gif">
           <h1>Search Functionality<br>ReactJs/HTML/CSS</h1>
-          <!-- <p>Tank Game was built by a friend and me. Battle against a friend(or enemy) in local multiplayer! Find powerups and blow up the other player's tank!</p> -->
-        </a>
+          <div class="flex justify-center px-6 py-4">
+            <a href="https://github.com/gasper94/Search-Functionality--React" class="bg-orange-500 rounded-lg px-3 py-1 text-md font-semibold text-white mr-2">Go to project</a>
+          </div>
+        </div>
   
-        <a class="subcard" href="https://github.com/gasper94/Tank-Game" target="_blank">
-          <div class="subcard-cover"><p>Go to Page</p></div>
+        <div class="subcard"  target="_blank">
+          <!-- <div class="subcard-cover"><p>Go to Page</p></div> -->
           <img style="width: 290px;" src="UM%20-%20Welcome!_files/tankugamu2.jpg">
           <h1>Multiplayer Tank Game<br>Java(Eclipse)</h1>
-          <!-- <p>Tank Game was built by a friend and me. Battle against a friend(or enemy) in local multiplayer! Find powerups and blow up the other player's tank!</p> -->
-        </a>
+          <div class="flex justify-center px-6 py-4">
+            <a href="https://github.com/gasper94/Tank-Game" class="bg-orange-500 rounded-lg px-3 py-1 text-md font-semibold text-white mr-2">Go to project</a>
+          </div>
+        </div>
+      </div>
        
-        <a class="subcard" href="https://github.com/gasper94/NearBites" target="_blank">
-          <div class="subcard-cover"><p>Go to Page</p></div>
+        <div class="flex flex-wrap justify-center  ">
+        <div class="subcard" href="https://github.com/gasper94/NearBites" target="_blank">
+          <!-- <div class="big-subcard-cover"><p>Go to Page</p></div> -->
           <img style="width: 290px; height: 570px;" src="UM%20-%20Welcome!_files/NearBites.gif">
           <h1>NearBites<br>Swift(XCode/YelpApi)</h1>
-        </a>
-        <a class="subcard" href="https://github.com/gasper94/TwitterApp" target="_blank">
-          <div class="subcard-cover"><p>Go to Page</p></div>
+          <div class="flex px-6 py-4 justify-center">
+            <a href="https://github.com/gasper94/NearBites" class="inline-block bg-orange-500 rounded-lg px-3 py-1 text-md font-semibold text-white mr-2">Go to project</a>
+           </div>
+          </div>
+        <div class="subcard"  target="_blank">
+          <!-- <div class="big-subcard-cover"><p>Go to Page</p></div> -->
           <img style="width: 290px; height: 570px;" src= "UM%20-%20Welcome!_files/CloneTwitter.gif" >
           <h1>Twitter Clone<br>Swift(Ios/TwitterApi)</h1>
-          <!-- <p>Tank Game was built by a friend and me. Battle against a friend(or enemy) in local multiplayer! Find powerups and blow up the other player's tank!</p> -->
+          <div class="flex px-6 py-4 justify-center">
+            <a href="https://github.com/gasper94/TwitterApp" class="inline-block bg-orange-500 rounded-lg px-3 py-1 text-md font-semibold text-white mr-2">Go to project</a>
+           </div>
+          </div>
         </a>
-        <a class="subcard" href="https://github.com/gasper94/XaraminGalleryApp" target="_blank">
-          <div class="subcard-cover"><p>Go to Page</p></div>
+        <div class="subcard"  target="_blank">
+          <!-- <div class="big-subcard-cover"><p>Go to Page</p></div> -->
           <img style="width: 290px; height: 570px;" src= "UM%20-%20Welcome!_files/CarGallery.gif" >
           <h1>Car Collection<br>Xamarin(C#)</h1>
-          <!-- <p>Tank Game was built by a friend and me. Battle against a friend(or enemy) in local multiplayer! Find powerups and blow up the other player's tank!</p> -->
-        </a>
+          <div class="flex justify-center px-6 py-4">
+            <a href="https://github.com/gasper94/XaraminGalleryApp" class="bg-orange-500 rounded-lg px-3 py-1 text-md font-semibold text-white mr-2">Go to project</a>
+          </div>
+ 
+        </div>
       </div>
   
       <a class="arrow-button" href="#contact">▼</a>
