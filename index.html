@@ -8,6 +8,8 @@
   <link href="Um%20-%20Welcome!_files/bootstrap.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Link Stylesheet -->
   <link rel="stylesheet" type="text/css" href="UM%20-%20Welcome!_files/index.css">
+    <!-- Tailwind -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
   <!-- Link Fonts -->
   <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Rubik:400,500" rel="stylesheet"> -->
@@ -36,6 +38,7 @@
       background-image: url("UM%20-%20Welcome!_files/uli.jpg");
       background-size: 100%;
       background-repeat: no-repeat;
+
     }
     a {
       text-decoration: none;
@@ -50,7 +53,8 @@
     }
     .subtitles {
       color: white;
-      font-size: 3vw;
+      padding-top: 10px;
+      font-size: 2vw;
       font-family: 'Open Sans';
       text-align: center;
     }
@@ -63,12 +67,13 @@
       text-align: center;
       display:block;
       padding: 1vw;
-      margin-top: 3vw;
+      margin-top: 75px;
+      /* margin-bottom: 50px; */
     }
     .arrow-button:hover {opacity: 1;}
 
     .card {
-      background-color: #f4f2f0;
+      background-color: #e2e8f0;
       font-size: 1.3em;
       padding: 4px 16px;
       box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.5);
@@ -100,7 +105,7 @@
       min-width: 300px;
       padding: 1%;
       margin: 0.5%;
-      background-color: #eee;
+      background-color: #fff5f5;
       box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
     }
     .subcard img {
@@ -176,7 +181,7 @@
     .Cards{
       display: flex;
       flex-direction: column;;
-      background-color: rgb(199, 199, 199);
+      background-color: #fff5f5;
       box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
       height: 270px;
       width: 400px;
@@ -187,7 +192,7 @@
       width: 100%;
     }
     .img {
-      background-color: rgb(199, 199, 199);
+      background-color: #fff5f5;
       width: 99%;
       height: 100%;
       padding: 2px;
@@ -233,58 +238,69 @@
      margin-bottom: -23px;
     }
 
-    
+    .image-color{
+      background-color: #041E41;
+    }
 
   </style>
 </head>
 
 <body data-gr-c-s-loaded="true">
+   <!-- Nav BAR -->
+   <nav class=" flex justify-between bg-gray-600">
+    <div class="text-2xl font-bold text-white m-4">
+      Ulises Martinez
+    </div>
+    <div class="flex flex-row pt-1 sm:hidden md:flex ">
+      <a class="text-xl font-bold text-white pr-4 m-4 hover:text-orange-500 sm:hidden md:hidden lg:flex" href="#about">About</a>
+      <a class="text-xl font-bold text-white pr-4 m-4 hover:text-orange-500 sm:hidden md:hidden lg:flex" href="#Jobs">Job Experience</a>
+      <a class="text-xl font-bold text-white pr-4 m-4 hover:text-orange-500 sm:hidden md:hidden lg:flex" href="#projects">Projects</a>
+      <!-- <a class="text-xl font-bold text-white pr-4 m-4 hover:text-orange-500 sm:hidden md:hidden lg:flex" href="#designs">Designs</a> -->
+      <a class="text-xl font-bold text-white pr-4 m-4 hover:text-orange-500 sm:hidden md:hidden lg:flex" href="#contact">Contact</a>
+        <div class="pr-4 pt-1">
+          <button class="h-12 w-12 rounded-full overflow-hidden border-2 border-white-600 focus:outline-none  hover:border-orange-500 focus:border-white">
+            <img class="h-full w-full object-cover" src="UM%20-%20Welcome!_files/professional-pic-2-square.jpg" alt="Your avatar">
+          </button>
+
+        </div">
+        
+    </div>
+    <!-- <div class="flex flex-row pt-1 sm:flex md:flex"  >
+        <button class=" center block h-16 w-16 rounded-full overflow-hidden border-2 border-gray-600 focus:outline-none focus:border-white">
+          <img class="h-full w-full object-cover" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&q=80" alt="Your avatar">
+        </button>
+        <div class="mt-2 py-2 w-48 bg-white rounded-lg shadow-xl">
+          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white">Account settings</a>
+          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white">Support</a>
+          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white">Sign out</a>
+        </div>
+   
+    </div> -->
+   </nav>
 
   <!-- NAVBAR -->
-  <div class="navbar">
-    <!-- navbar buttons -->
+  <!-- <div class="navbar">
     <a class="title-button" href="">Ulises Martinez</a>
-
-    <!-- spacer to push other elements to right and left -->
     <div style="flex-grow: 1"></div>
 
     <div class="dropdown">
       <a class="dropdown-button" href="#about">About</a>
-      <!-- <div class="dropdown-content">
-        <a href="#">Experience</a>
-        <a href="#">Education</a>
-        <a href="#">Skills</a>
-      </div> -->
     </div>
     <div class="dropdown"> 
       <a class="dropdown-button" href="#Jobs">Job Experience</a>
-      <!-- <div class="dropdown-content">
-        <a href="#">Games</a>
-        <a href="#">Web Apps</a>
-      </div> -->
     </div>
     <div class="dropdown"> 
       <a class="dropdown-button" href="#projects">Projects</a>
-      <!-- <div class="dropdown-content">
-        <a href="#">Games</a>
-        <a href="#">Web Apps</a>
-      </div> -->
     </div>
     <div class="dropdown"> 
       <a class="dropdown-button" href="#designs">Designs</a>
-      <!-- <div class="dropdown-content">
-        <a href="#">Games</a>
-        <a href="#">Web Apps</a>
-      </div> -->
     </div>
-    
     <a class="contact-button" href="#contact">Contact</a>
-  </div>
+  </div> -->
 
-  <!-- BIG NAME -->
-  <h1 class="big-name" style="margin-top: 5px;" >Ulises Martinez</h1>
-  <hr style="width: 30%; border-top: 2px solid white;">
-  <h2 class="subtitles" style="margin-top: 40px;">Software Engineer • Web Dev • UX</h2>
+  
+  <h1 class="big-name" style="margin-top: 50px;" >Ulises Martinez</h1>
+  <h2 class="subtitles" >Software Engineer • Web Dev • UX</h2>
   <h2 class="subtitles" style="margin-top: 170px; color: transparent">.</h2>
   
 
@@ -316,11 +332,123 @@
 
 
   <a id="Jobs"></a>
-  <div class="card">
+
+  <div class="card bg-gray-100">
     <h1>Job Experience</h1>
     <hr>
+    
+        
+    <div class="flex flex-wrap justify-center ">
+      <div class="min-w-2/3 p-2">
+        <div class="text-gray-700 text-center p-2 ">
+          <div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto my-8 sm:max-w-lg bg-gray-100">
+            <img class="w-full h-64" src="UM%20-%20Welcome!_files/Foundry_College.jpg" alt="Sunset in the mountains">
+            <div class="px-6 py-4">
+              <div class="font-bold text-2xl text-left mb-2">Foundry College, Inc</div>
+              <h5 class="text-gray-600 text-2xl text-left">
+                Worked as Front End Engineer helping developing new features such as video player and administration tool.
+              </h5>
+            </div>
+            <div class="flex px-6 py-4 ">
+              <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#ReactJs</span>
+              <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#AWS</span>
+              <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-600">#JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="min-w-2/3 p-2">
+        <div class="text-gray-700 text-center p-2">
+          <div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto my-8 sm:max-w-lg bg-gray-100">
+            <img class="w-full h-64 object-scale-down image-color" src="UM%20-%20Welcome!_files/clear_labs.png" alt="Sunset in the mountains">
+            <div class="px-6 py-4">
+              <div class="font-bold text-2xl text-left mb-2">Clear Labs, Inc</div>
+              <h5 class="text-gray-600 text-2xl text-left">
+                Worked on transitioning an existing ReactJS project to different desktop platforms using electronJs.
+              </h5>
+            </div>
+            <div class="flex px-6 py-4">
+              <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#ReactJs</span>
+              <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#Electron</span>
+              <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-600">#Desktop</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="min-w-2/3 p-2">
+        <div class="text-gray-700 text-center p-2">
+          <div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto my-8 sm:max-w-lg bg-gray-100">
+            <img class="w-full h-64" src="UM%20-%20Welcome!_files/Golden_Gate_Appliance.png" alt="Sunset in the mountains">
+            <div class="px-6 py-4">
+              <div class="font-bold text-2xl text-left mb-2">The Coldest Sunset</div>
+              <h5 class="text-gray-600 text-2xl text-left">
+                Worked alongside an small business owner to implement his business website and business image.
+              </h5>
+            </div>
+            <div class="flex px-6 py-4">
+              <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#ReactJS</span>
+              <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#Firebase</span>
+              <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-600">#AWS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="flex ">
+
+      <div class="flex-1 h-auto rounded overflow-hidden shadow-2xl mx-auto my-8 ">
+        <img class="w-full" src="UM%20-%20Welcome!_files/Foundry_College.jpg" alt="Sunset in the mountains">
+        <div class="px-6 py-4 bg-gray-300">
+          <div class="font-bold text-xl mb-2">Foundry College</div>
+          <div class="text-gray-600 text-base">
+            <h6>Gathered and validated the video player functionality to help improve user experience of the system’s user interface before the active phase of development.</h6>
+          </div>
+        </div>
+        <div class="px-6 py-4 bg-gray-300">
+          <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#ReactJs</span>
+          <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#AWS</span>
+          <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-600">#Javascript</span>
+        </div>
+      </div>
+
+
+      <div class="flex-1 h-auto rounded overflow-hidden shadow-2xl mx-auto my-8 ">
+        <img class="w-full" src="UM%20-%20Welcome!_files/Foundry_College.jpg" alt="Sunset in the mountains">
+        <div class="px-6 py-4 bg-gray-300">
+          <div class="font-bold text-xl mb-2">Foundry College</div>
+          <div class="text-gray-600 text-base">
+            <h6>Gathered and validated the video player functionality to help improve user experience of the system’s user interface before the active phase of development.</h6>
+          </div>
+        </div>
+        <div class="px-6 py-4 bg-gray-300">
+          <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#ReactJs</span>
+          <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#AWS</span>
+          <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-600">#Javascript</span>
+        </div>
+      </div>
+
+   
+      <div class="flex-1 h-auto rounded overflow-hidden shadow-2xl mx-auto my-8 ">
+        <img class="w-full" src="UM%20-%20Welcome!_files/Foundry_College.jpg" alt="Sunset in the mountains">
+        <div class="px-6 py-4 bg-gray-300">
+          <div class="font-bold text-xl mb-2">Foundry College</div>
+          <div class="text-gray-600 text-base">
+            <h6>Gathered and validated the video player functionality to help improve user experience of the system’s user interface before the active phase of development.</h6>
+          </div>
+        </div>
+        <div class="px-6 py-4 bg-gray-300">
+          <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#ReactJs</span>
+          <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#AWS</span>
+          <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-600">#Javascript</span>
+        </div>
+      </div>
+     
+    </div> -->
+
+
     <!-- NEW -->
-    <div class="card-inner-job">
+    <!-- <div class="card-inner-job">
+      
       <div class="cardx">
         <div class="mediaCardx">
           <img class="img" src="UM%20-%20Welcome!_files/Foundry_College.jpg">
@@ -387,7 +515,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <a class="arrow-button" href="#contact">▼</a>
   </div>
 
@@ -407,7 +535,7 @@
         <a class="subcard" href="https://github.com/gasper94/Search-Functionality--React" target="_blank">
           <div class="subcard-cover"><p>Go to Page</p></div>
           <img style="width: 290px;" src="http://g.recordit.co/dYnN9d6w1A.gif">
-          <h1>Search Functionality<br>Java(Eclipse)</h1>
+          <h1>Search Functionality<br>ReactJs/HTML/CSS</h1>
           <!-- <p>Tank Game was built by a friend and me. Battle against a friend(or enemy) in local multiplayer! Find powerups and blow up the other player's tank!</p> -->
         </a>
   
@@ -421,12 +549,12 @@
         <a class="subcard" href="https://github.com/gasper94/NearBites" target="_blank">
           <div class="subcard-cover"><p>Go to Page</p></div>
           <img style="width: 290px; height: 570px;" src="http://g.recordit.co/gKpQlrYf9j.gif">
-          <h1>NearBites<br>(HTML/CSS/JS)</h1>
+          <h1>NearBites<br>Swift(XCode/YelpApi)</h1>
         </a>
         <a class="subcard" href="https://github.com/gasper94/TwitterApp" target="_blank">
           <div class="subcard-cover"><p>Go to Page</p></div>
           <img style="width: 290px; height: 570px;" src= "http://g.recordit.co/ZuUHoQny3u.gif" >
-          <h1>Twitter Clone<br>Swift(Ios)</h1>
+          <h1>Twitter Clone<br>Swift(Ios/TwitterApi)</h1>
           <!-- <p>Tank Game was built by a friend and me. Battle against a friend(or enemy) in local multiplayer! Find powerups and blow up the other player's tank!</p> -->
         </a>
         <a class="subcard" href="https://github.com/gasper94/XaraminGalleryApp" target="_blank">
@@ -440,7 +568,7 @@
       <a class="arrow-button" href="#contact">▼</a>
     </div>
 
-    <a id="designs"></a>
+    <!-- <a id="designs"></a>
     <div class="card">
       <h1>Designs</h1>
       <hr>
@@ -450,46 +578,41 @@
           <img style="width: 290px;" src="UM%20-%20Welcome!_files/Video-Player.png">
           <h1>Video Player<br>(ReactJS/CSS/HTML/AWS)</h1>
           
-          <!-- <p>Galactic Mail was built by a friend and me, using base code from Tank Game. Avoid asteroids and safely deliver mail to all the moons in the galaxy! Try to beat the high score!</p> -->
-        </a>
+          </a>
   
         <a class="subcard" href="https://github.com/gasper94/Search-Functionality--React" target="_blank">
           <div class="subcard-cover"><p>Go to Page</p></div>
           <img style="width: 290px;" src="http://g.recordit.co/dYnN9d6w1A.gif">
           <h1>Search Functionality<br>Java(Eclipse)</h1>
-          <!-- <p>Tank Game was built by a friend and me. Battle against a friend(or enemy) in local multiplayer! Find powerups and blow up the other player's tank!</p> -->
-        </a>
+           </a>
   
         <a class="subcard" href="https://github.com/gasper94/Tank-Game" target="_blank">
           <div class="subcard-cover"><p>Go to Page</p></div>
           <img style="width: 290px;" src="UM%20-%20Welcome!_files/tankugamu2.jpg">
           <h1>Multiplayer Tank Game<br>Java(Eclipse)</h1>
-          <!-- <p>Tank Game was built by a friend and me. Battle against a friend(or enemy) in local multiplayer! Find powerups and blow up the other player's tank!</p> -->
-        </a>
+           </a>
        
         <a class="subcard" href="https://github.com/gasper94/NearBites" target="_blank">
           <div class="subcard-cover"><p>Go to Page</p></div>
           <img style="width: 290px; height: 570px;" src="http://g.recordit.co/gKpQlrYf9j.gif">
-          <h1>NearBites<br>(HTML/CSS/JS)</h1>
+          <h1>NearBites<br>Swift(XCode/YelpApi)</h1>
         </a>
         <a class="subcard" href="https://github.com/gasper94/TwitterApp" target="_blank">
           <div class="subcard-cover"><p>Go to Page</p></div>
           <img style="width: 290px; height: 570px;" src= "http://g.recordit.co/ZuUHoQny3u.gif" >
-          <h1>Twitter Clone<br>Swift(Ios)</h1>
-          <!-- <p>Tank Game was built by a friend and me. Battle against a friend(or enemy) in local multiplayer! Find powerups and blow up the other player's tank!</p> -->
-        </a>
+          <h1>Twitter Clone<br>Swift(Ios/TwitterApi)</h1>
+          </a>
         <a class="subcard" href="https://github.com/gasper94/XaraminGalleryApp" target="_blank">
           <div class="subcard-cover"><p>Go to Page</p></div>
           <img style="width: 290px; height: 570px;" src= "http://g.recordit.co/emxABuwACU.gif" >
           <h1>Car Collection<br>Xamarin(C#)</h1>
-          <!-- <p>Tank Game was built by a friend and me. Battle against a friend(or enemy) in local multiplayer! Find powerups and blow up the other player's tank!</p> -->
-        </a>
+           </a>
       </div>
   
       <a class="arrow-button" href="#contact">▼</a>
     </div>
   
-  
+   -->
   
 
   <!-- CONTACT -->
@@ -505,4 +628,5 @@
     
   </div>
 
-</body></html>
+</body>
+</html>
