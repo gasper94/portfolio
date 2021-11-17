@@ -105,7 +105,8 @@
       min-width: 300px;
       padding: 1%;
       margin: 0.5%;
-      background-color: white;
+      --tw-bg-opacity: 1;
+      background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
       border-radius: 0.25rem;
       box-shadow: 10px 10px 50px 10px rgba(0, 0, 0, 0.25);
     }
@@ -154,7 +155,7 @@
     .link {
       display: inline-block;
       font-weight: bold;
-      opacity: 0.7;
+      opacity: 0.8;
     }
     .link:hover {
       opacity: 1;
@@ -258,7 +259,7 @@
 
 <body data-gr-c-s-loaded="true">
    <!-- Nav BAR -->
-   <nav class=" flex justify-between bg-gray-600">
+   <nav class="fixed flex justify-between bg-gray-600 w-full top-0 z-50">
     <div class="text-2xl font-bold text-white m-4">
       Ulises Martinez
     </div>
@@ -268,25 +269,12 @@
       <a class="text-xl font-bold text-white pr-4 m-4 hover:text-orange-500 sm:hidden md:hidden lg:flex" href="#projects">Projects</a>
       <!-- <a class="text-xl font-bold text-white pr-4 m-4 hover:text-orange-500 sm:hidden md:hidden lg:flex" href="#designs">Designs</a> -->
       <a class="text-xl font-bold text-white pr-4 m-4 hover:text-orange-500 sm:hidden md:hidden lg:flex" href="#contact">Contact</a>
-        <div class="pr-4 pt-1">
-          <button class="h-12 w-12 rounded-full overflow-hidden border-2 border-white-600 focus:outline-none  hover:border-orange-500 focus:border-white">
-            <img class="h-full w-full object-cover" src="UM%20-%20Welcome!_files/professional-pic-2-square.jpg" alt="Your avatar">
-          </button>
+      
 
-        </div">
+      <a class="text-xl font-bold text-white pr-4 m-4 hover:text-orange-500 sm:hidden md:hidden lg:flex" href="UM - Welcome!_files\Ulises_Martinez_Resume.pdf" target="_blank">View Resume</a>
+      
         
     </div>
-    <!-- <div class="flex flex-row pt-1 sm:flex md:flex"  >
-        <button class=" center block h-16 w-16 rounded-full overflow-hidden border-2 border-gray-600 focus:outline-none focus:border-white">
-          <img class="h-full w-full object-cover" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&q=80" alt="Your avatar">
-        </button>
-        <div class="mt-2 py-2 w-48 bg-white rounded-lg shadow-xl">
-          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white">Account settings</a>
-          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white">Support</a>
-          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white">Sign out</a>
-        </div>
-   
-    </div> -->
    </nav>
 
   <!-- NAVBAR -->
@@ -311,7 +299,7 @@
 
   
   <h1 class="big-name" style="margin-top: 50px;" >Ulises Martinez</h1>
-  <h2 class="subtitles" >Software Engineer • Web Dev • UX</h2>
+  <h2 class="subtitles" >Software Engineer • Web Dev </h2>
   <h2 class="subtitles" style="margin-top: 170px; color: transparent">.</h2>
   
 
@@ -328,14 +316,14 @@
         <img src="UM%20-%20Welcome!_files/professional-pic-2-square.jpg" style="width: 100%; border-radius: 50%;">
       </div>
       <div style="width: 40%; min-width: 500px; display: block;">
-        <p>Hi, I'm Ulises Martinez! I'm a Software Developer. I graduated from San Francisco State University.</p>
+        <p>Hi, I'm Ulises Martinez! I'm a Software Developer.</p>
         <p>I'm fascinated with computers and what technology can do for people.</p>
         <p>I'm especially interested in Web Development, Data Science, and Mobile Development</p>
       </div>
     </div>  
 
     <div class="card-inner">
-      <p>For a quick summary of my experience,<br><a href="UM - Welcome!_files\Ulises_Martinez_Resume.pdf" target="_blank" class="link">look at my resume.</a></p>
+      <p >For a quick summary of my experience,<br><a href="UM - Welcome!_files\Ulises_Martinez_Resume.pdf" target="_blank" class="link" style="color: #ff7923;">look at my resume.</a></p>
     </div>
 
     <a class="arrow-button" href="#projects">▼</a>
@@ -349,6 +337,7 @@
     <hr>
    
     <div class="flex flex-wrap justify-center ">
+
       <div class="min-w-2/3 p-2">
         <div class="text-gray-700 text-center p-2 ">
           <div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto my-8 sm:max-w-lg bg-gray-100">
@@ -362,11 +351,13 @@
             <div class="flex px-6 py-4 ">
               <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#ReactJs</span>
               <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#AWS</span>
+              <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#Nodejs</span>
               <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-600">#JavaScript</span>
             </div>
           </div>
         </div>
       </div>
+
       <div class="min-w-2/3 p-2">
         <div class="text-gray-700 text-center p-2">
           <div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto my-8 sm:max-w-lg bg-gray-100">
@@ -385,6 +376,7 @@
           </div>
         </div>
       </div>
+
       <div class="min-w-2/3 p-2">
         <div class="text-gray-700 text-center p-2">
           <div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto my-8 sm:max-w-lg bg-gray-100">
@@ -404,129 +396,13 @@
         </div>
       </div>
 
+
     </div>
-    <!-- <div class="flex ">
 
-      <div class="flex-1 h-auto rounded overflow-hidden shadow-2xl mx-auto my-8 ">
-        <img class="w-full" src="UM%20-%20Welcome!_files/Foundry_College.jpg" alt="Sunset in the mountains">
-        <div class="px-6 py-4 bg-gray-300">
-          <div class="font-bold text-xl mb-2">Foundry College</div>
-          <div class="text-gray-600 text-base">
-            <h6>Gathered and validated the video player functionality to help improve user experience of the system’s user interface before the active phase of development.</h6>
-          </div>
-        </div>
-        <div class="px-6 py-4 bg-gray-300">
-          <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#ReactJs</span>
-          <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#AWS</span>
-          <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-600">#Javascript</span>
-        </div>
-      </div>
+    <div class="card-inner">
+      <p >For a quick summary of my experience,<br><a href="UM - Welcome!_files\Ulises_Martinez_Resume.pdf" target="_blank" class="link" style="color: #ff7923;">look at my resume.</a></p>
+    </div>
 
-
-      <div class="flex-1 h-auto rounded overflow-hidden shadow-2xl mx-auto my-8 ">
-        <img class="w-full" src="UM%20-%20Welcome!_files/Foundry_College.jpg" alt="Sunset in the mountains">
-        <div class="px-6 py-4 bg-gray-300">
-          <div class="font-bold text-xl mb-2">Foundry College</div>
-          <div class="text-gray-600 text-base">
-            <h6>Gathered and validated the video player functionality to help improve user experience of the system’s user interface before the active phase of development.</h6>
-          </div>
-        </div>
-        <div class="px-6 py-4 bg-gray-300">
-          <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#ReactJs</span>
-          <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#AWS</span>
-          <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-600">#Javascript</span>
-        </div>
-      </div>
-
-   
-      <div class="flex-1 h-auto rounded overflow-hidden shadow-2xl mx-auto my-8 ">
-        <img class="w-full" src="UM%20-%20Welcome!_files/Foundry_College.jpg" alt="Sunset in the mountains">
-        <div class="px-6 py-4 bg-gray-300">
-          <div class="font-bold text-xl mb-2">Foundry College</div>
-          <div class="text-gray-600 text-base">
-            <h6>Gathered and validated the video player functionality to help improve user experience of the system’s user interface before the active phase of development.</h6>
-          </div>
-        </div>
-        <div class="px-6 py-4 bg-gray-300">
-          <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#ReactJs</span>
-          <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#AWS</span>
-          <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-600">#Javascript</span>
-        </div>
-      </div>
-     
-    </div> -->
-
-
-    <!-- NEW -->
-    <!-- <div class="card-inner-job">
-      
-      <div class="cardx">
-        <div class="mediaCardx">
-          <img class="img" src="UM%20-%20Welcome!_files/Foundry_College.jpg">
-        </div>
-        <div class="bottomCardx">
-          <h2 class="Company">Company: Foundry College</h2>
-          <h2 class="Description">Job Title: FRONT-END DEVELOPER</h2>
-          <p class="bottomTextx">
-            <ul class="a" >
-              <li>Gathered and validated the video player functionality to help improve user experience of the system’s user interface before the active phase of development.</li>
-              <li>Created a single page application (SPA) with the video player prototype with stable and maintainable components using ReactJS, HTML, and CSS to target all major browsers and creating a seamless experience for over 1,000 students.</li>
-              <li>Worked with third party libraries to enhance the video player functionality to sync the video’s audio to a transcript obtained from AWS Transcribe. In addition, added extra functionalities to allow words to be searched and iterated.</li>
-              <li>Worked with Senior Software Engineer to integrate the video player page into the existing company’s website application.</li>
-          </ul>
-          </p>
-          <div class="actionsCardx">
-            <h5 class="Descriptionx">Date: May 2020 to Present </h5>
-          </div>
-        </div>
-      </div>
-
-      <div class="cardx">
-        <div class="mediaCardx">
-          <img class="img" src="UM%20-%20Welcome!_files/clear_labs.png">
-        </div>
-        <div class="bottomCardx">
-          <h2 class="Company">Company: Clear Labs</h2>
-          <h2 class="Description">Job Title: SOFTWARE ENGINEER INTERN</h2>
-          <p class="bottomTextx">
-            <ul class="a" >
-              <li>Worked with Senior Software Engineer on planning, researching, and migrating the existing company’s website application to a
-                desktop application for field technicians to use.</li>
-              <li>Conducted Behavior Driven Testing with major applications features using Selenium to allow employees to contribute feedback
-                to the development process.</li>
-              <li>Debugged production issues across services and multiple levels of the stack such as user authentication functionality and
-                cross-platform usability.</li>
-                <li>Participated in weekly Agile meetings and peer code reviews to maintain high quality code.
-                </li>
-          </ul>
-          </p>
-          <div class="actionsCardx">
-            <h5 class="Descriptionx">Date: January 2020 to April 2020</h5>
-          </div>
-        </div>
-      </div>
-
-      <div class="cardx">
-        <div class="mediaCardx">
-          <img class="img" src="UM%20-%20Welcome!_files/Golden_Gate_Appliance.png">
-        </div>
-        <div class="bottomCardx">
-          <h2 class="Company">Company: Golden Gate Appliance Repair</h2>
-          <h2 class="Description">Job Title: WEBPAGE CONSULTANT</h2>
-          <p class="bottomTextx">
-            <ul class="a" >
-              <li>Developed a mock-up of the website featuring functionality that enabled customers and the owner to manage client accounts.</li>
-              <li>Positioned the owner to scale the site in line with business growth by using Firebase as a non-relational database platform.</li>
-              <li>Trained the business owner on the limitations and capabilities of the prototype, and of the features of static websites in order to identify a platform aligned with the unique needs of the company.</li>
-              
-          </ul>
-          </p>
-          <div class="actionsCardx">
-            <h5 class="Descriptionx">Date: January 2020 to April 2020</h5>
-          </div>
-        </div>
-      </div>
-    </div> -->
     <a class="arrow-button" href="#contact">▼</a>
   </div>
 
@@ -535,46 +411,27 @@
     <div class="card">
       <h1>Projects</h1>
       <hr>
-      <div class="flex flex-wrap justify-center ">
+
+
+      <div class="flex flex-wrap justify-center">
+
         <div class="min-w-2/3 p-2">
           <div class="text-gray-700 text-center p-2">
             <div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto my-8 sm:max-w-lg bg-gray-100">
-              <img class="w-full h-64" src="UM%20-%20Welcome!_files/MERN.png" alt="Sunset in the mountains">
+              <img class="w-full h-64" src="UM%20-%20Welcome!_files/Reports_Tool.jpeg" alt="Sunset in the mountains">
               <div class="px-6 py-4">
-                <div class="font-bold text-2xl text-left mb-2">MERN Template - Personal Project</div>
-                <h5 class="text-gray-600 text-2xl text-left">
-                  This MERN Template is a boilerplate for fullstack JavaScript development which utilizes MongoDB, Express, React, and Node.js.</h5>
-              </div>
-              <div class="flex px-6 py-4">
-                <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#ReactJS</span>
-                <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#Styled-Components</span>
-                <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-600">#AWS</span>
-                
-                <!-- <button onclick="" class="inline-block bg-orange-500 rounded-md px-3 py-1 text-sm text-white font-semibold ">Documentation</button> -->
-              </div>
-              <a href="https://github.com/gasper94/MERN-Template" class="inline-block bg-orange-500 rounded-full px-3 py-1 ml-1 mb-4 text-sm text-white font-semibold ">Go to Documentation</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="min-w-2/3 h-24 p-2">
-          <div class="text-gray-700 text-center p-2">
-            <div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto my-8 sm:max-w-lg bg-gray-100">
-              <img class="w-full h-64" src="UM%20-%20Welcome!_files/DevOpsTool.png" alt="Sunset in the mountains">
-              <div class="px-6 py-4">
-                <div class="font-bold text-2xl text-left mb-2">DevOps Tool - Foundry College</div>
-                <h5 class="text-gray-600 text-2xl text-left">
-                  The DevOps Tool: An Tool for Foundry College Faculty to tap into Foundry Web Services to opening and closing classes, managing information, and running class related operations.
+                <div class="font-bold text-2xl text-left mb-2">Reports Tool - Foundry College</div>
+                <h5 class="text-gray-600 text-xl text-left h-32">
+                  The Reports Tool: An Tool for Foundry College Faculty to tap into Foundry Web Services to view information related to the classroom such as attendance, assignments, and holistic analytics.
                 </h5>
               </div>
               <div class="flex px-6 py-4">
                 <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#ReactJS</span>
                 <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#Styled-Components</span>
                 <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-600">#AWS</span>
-                
                 <!-- <button onclick="" class="inline-block bg-orange-500 rounded-md px-3 py-1 text-sm text-white font-semibold ">Documentation</button> -->
               </div>
-              <!-- <a href="https://docs.google.com/presentation/d/1qlEn7-UAX9jjTKusAXObp1kAIyF0VRQRmciG8aitL34/edit?usp=sharing" class="inline-block bg-orange-500 rounded-full px-3 py-1 ml-1 mb-4 text-sm text-white font-semibold ">Go to Documentation</a> -->
+              <a href="https://docs.google.com/presentation/d/1agN9rSMezbnVV3VF7q7jeBvCXsGfsoG9RcLfXZLflXw/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-block bg-orange-500 rounded-full px-3 py-1 ml-1 mb-4 text-sm text-white font-semibold ">Go to Documentation</a>
             </div>
           </div>
         </div>
@@ -585,7 +442,7 @@
               <img class="w-full h-64" src="UM%20-%20Welcome!_files/videoPlayer.gif" alt="Sunset in the mountains">
               <div class="px-6 py-4">
                 <div class="font-bold text-2xl text-left mb-2">Video Player - Foundry College</div>
-                <h5 class="text-gray-600 text-2xl text-left">
+                <h5 class="text-gray-600 text-xl text-left h-32">
                   The video player consists of a pre-recorded video of the lecture, with slides, and synchronized text extracted from the video with AWS Transcribe.
                 </h5>
               </div>
@@ -596,7 +453,50 @@
                 
                 <!-- <button onclick="" class="inline-block bg-orange-500 rounded-md px-3 py-1 text-sm text-white font-semibold ">Documentation</button> -->
               </div>
-              <a href="https://docs.google.com/presentation/d/1qlEn7-UAX9jjTKusAXObp1kAIyF0VRQRmciG8aitL34/edit?usp=sharing" class="inline-block bg-orange-500 rounded-full px-3 py-1 ml-1 mb-4 text-sm text-white font-semibold ">Go to Documentation</a>
+              <a href="https://docs.google.com/presentation/d/1qlEn7-UAX9jjTKusAXObp1kAIyF0VRQRmciG8aitL34/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-block bg-orange-500 rounded-full px-3 py-1 ml-1 mb-4 text-sm text-white font-semibold ">Go to Documentation</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="min-w-2/3 p-2">
+          <div class="text-gray-700 text-center p-2">
+            <div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto my-8 sm:max-w-lg bg-gray-100">
+              <img class="w-full h-64" src="UM%20-%20Welcome!_files/RecorderTool.png" alt="Sunset in the mountains">
+              <div class="px-6 py-4">
+                <div class="font-bold text-2xl text-left mb-2">Recorder Tool - Foundry College</div>
+                <h5 class="text-gray-600 text-xl text-left h-32">
+                  The recorder is a tool to help automate foundry college operations in relation to the recording of classes. Faculty use this tool to monitor if classes are being recorded correctly while classes are happening.   
+                </div>
+              <div class="flex px-6 py-4">
+                <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#ReactJS</span>
+                <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#Styled-Components</span>
+                <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#Pubnub</span>
+                <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-600">#AWS</span>
+                
+                <!-- <button onclick="" class="inline-block bg-orange-500 rounded-md px-3 py-1 text-sm text-white font-semibold ">Documentation</button> -->
+              </div>
+              <a class="inline-block bg-transparent rounded-full px-3 py-1 ml-1 mb-4 text-sm text-white font-semibold " target="_blank" rel="noopener noreferrer">Go to Documentation</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="min-w-2/3 p-2">
+          <div class="text-gray-700 text-center p-2">
+            <div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto my-8 sm:max-w-lg bg-gray-100">
+              <img class="w-full h-64" src="UM%20-%20Welcome!_files/DevOpsTool.png" alt="Sunset in the mountains">
+              <div class="px-6 py-4">
+                <div class="font-bold text-2xl text-left mb-2">DevOps Tool - Foundry College</div>
+                <h5 class="text-gray-600 text-xl text-left h-32">
+                  The DevOps Tool: An Tool for Foundry College Faculty to tap into Foundry Web Services to open and close classes, manage information, and run class-related operations.
+                </h5>
+              </div>
+              <div class="flex px-6 py-4">
+                <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#ReactJS</span>
+                <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#Styled-Components</span>
+                <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-600">#AWS</span>
+                <!-- <button onclick="" class="inline-block bg-orange-500 rounded-md px-3 py-1 text-sm text-white font-semibold ">Documentation</button> -->
+              </div>
+              <a href="https://docs.google.com/presentation/d/1zgHpYmqrxbrTzPulRGufQZqkahT1vTbtWZZqtgkwp7o/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-block bg-orange-500 rounded-full px-3 py-1 ml-1 mb-4 text-sm text-white font-semibold ">Go to Documentation</a>
             </div>
           </div>
         </div>
@@ -607,7 +507,7 @@
               <img class="w-full h-64 object-scale-down image-color" src="UM%20-%20Welcome!_files/CookIt.png" alt="Sunset in the mountains">
               <div class="px-6 py-4">
                 <div class="font-bold text-2xl text-left mb-2">CookIt - (In Progress)</div>
-                <h5 class="text-gray-600 text-2xl text-left">
+                <h5 class="text-gray-600 text-xl text-left h-32">
                   Cooking app: Add your own recipes, create your own grocery list, search for new recipes, and share your recipes with your friends.
                 </h5>
               </div>
@@ -616,49 +516,55 @@
                 <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#Ionic</span>
                 <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-600">#AWS</span>
               </div>
-              <a href="https://docs.google.com/presentation/d/1aL-SjB9xxkMMdXPI0avJKhxkN7garJ28jHI2a82mNxo/edit?usp=sharing" class="inline-block bg-orange-500 rounded-full px-3 py-1 ml-1 mb-4 text-sm text-white font-semibold ">Go to Documentation</a>
+              <a href="https://docs.google.com/presentation/d/1aL-SjB9xxkMMdXPI0avJKhxkN7garJ28jHI2a82mNxo/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-block bg-orange-500 rounded-full px-3 py-1 ml-1 mb-4 text-sm text-white font-semibold ">Go to Documentation</a>
             </div>
           </div>
         </div>
-      </div>
-      <div class="flex flex-wrap justify-center">
-      <!-- <div class="flex flex-wrap justify-center sm:flex-col sm:justify-center">
-        <div class="min-w-2/3 p-2">
+
+        <div class="min-w-2/3 p-2  max-h-36">
           <div class="text-gray-700 text-center p-2">
             <div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto my-8 sm:max-w-lg bg-gray-100">
-              <img class="w-full h-64" src="UM%20-%20Welcome!_files/garactic.jpg" alt="Sunset in the mountains">
+              <img class="w-full h-64" src="UM%20-%20Welcome!_files/MERN.png" alt="Sunset in the mountains">
               <div class="px-6 py-4">
-                <div class="font-bold text-2xl text-left mb-2">Dormy - Home Rental Services</div>
-                <h5 class="text-gray-600 text-2xl text-left">
-                  Find local housing around campus, or rent your place if you're an homeowner.
-                </h5>
+                <div class="font-bold text-2xl text-left mb-2">MERN Template - Personal Project</div>
+                <h5 class="text-gray-600 text-xl text-left h-32">
+                  This MERN Template is a boilerplate for fullstack JavaScript development which utilizes MongoDB, Express, React, and Node.js.</h5>
               </div>
               <div class="flex px-6 py-4">
                 <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#ReactJS</span>
-                <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#
-                  JavaScript
-                </span>
+                <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#Styled-Components</span>
                 <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-600">#AWS</span>
+                
+                <!-- <button onclick="" class="inline-block bg-orange-500 rounded-md px-3 py-1 text-sm text-white font-semibold ">Documentation</button> -->
               </div>
+              <a href="https://github.com/gasper94/MERN-Template" target="_blank" rel="noopener noreferrer" class="inline-block bg-orange-500 rounded-full px-3 py-1 ml-1 mb-4 text-sm text-white font-semibold ">Go to Documentation</a>
             </div>
           </div>
-        </div> -->
+        </div>
+
+
+      </div>
+
+
+      <h1>Small Projects</h1>
+      <hr>
+      <div class="flex flex-wrap justify-center">
+      
 
         <div class="subcard"  target="_blank">
-          <!-- <div class="subcard-cover"><p>Go to Page</p></div> -->
           <img style="width: 290px;" src="UM%20-%20Welcome!_files/garactic.jpg">
           <h1>Dormy - Home Rental<br>(JS/Node/AWS)</h1>
           <div class="flex justify-center px-6 py-4">
-            <a href="https://github.com/gasper94/Dormy" class="bg-orange-500 rounded-lg px-3 py-1 text-md font-semibold text-white mr-2">Go to project</a>
+            <a href="https://github.com/gasper94/Dormy" target="_blank" rel="noopener noreferrer" class="bg-orange-500 rounded-lg px-3 py-1 text-md font-semibold text-white mr-2">Go to project</a>
           </div>
         </div>
   
         <div class="subcard"  target="_blank">
           <!-- <div class="subcard-cover"><p>Go to Page</p></div> -->
           <img style="width: 290px;" src="UM%20-%20Welcome!_files/Search.gif">
-          <h1>Search Functionality<br>ReactJs/HTML/CSS</h1>
+          <h1>Search Functionality<br>ReactJs/CSS</h1>
           <div class="flex justify-center px-6 py-4">
-            <a href="https://github.com/gasper94/Search-Functionality--React" class="bg-orange-500 rounded-lg px-3 py-1 text-md font-semibold text-white mr-2">Go to project</a>
+            <a href="https://github.com/gasper94/Search-Functionality--React" target="_blank" rel="noopener noreferrer" class="bg-orange-500 rounded-lg px-3 py-1 text-md font-semibold text-white mr-2">Go to project</a>
           </div>
         </div>
   
@@ -667,7 +573,7 @@
           <img style="width: 290px;" src="UM%20-%20Welcome!_files/tankugamu2.jpg">
           <h1>Multiplayer Tank Game<br>Java(Eclipse)</h1>
           <div class="flex justify-center px-6 py-4">
-            <a href="https://github.com/gasper94/Tank-Game" class="bg-orange-500 rounded-lg px-3 py-1 text-md font-semibold text-white mr-2">Go to project</a>
+            <a href="https://github.com/gasper94/Tank-Game" target="_blank" rel="noopener noreferrer" class="bg-orange-500 rounded-lg px-3 py-1 text-md font-semibold text-white mr-2">Go to project</a>
           </div>
         </div>
       </div>
@@ -678,7 +584,7 @@
           <img style="width: 290px; height: 570px;" src="UM%20-%20Welcome!_files/NearBites.gif">
           <h1>NearBites<br>Swift(XCode/YelpApi)</h1>
           <div class="flex px-6 py-4 justify-center">
-            <a href="https://github.com/gasper94/NearBites" class="inline-block bg-orange-500 rounded-lg px-3 py-1 text-md font-semibold text-white mr-2">Go to project</a>
+            <a href="https://github.com/gasper94/NearBites" target="_blank" rel="noopener noreferrer" class="inline-block bg-orange-500 rounded-lg px-3 py-1 text-md font-semibold text-white mr-2">Go to project</a>
            </div>
           </div>
         <div class="subcard"  target="_blank">
@@ -686,7 +592,7 @@
           <img style="width: 290px; height: 570px;" src= "UM%20-%20Welcome!_files/CloneTwitter.gif" >
           <h1>Twitter Clone<br>Swift(Ios/TwitterApi)</h1>
           <div class="flex px-6 py-4 justify-center">
-            <a href="https://github.com/gasper94/TwitterApp" class="inline-block bg-orange-500 rounded-lg px-3 py-1 text-md font-semibold text-white mr-2">Go to project</a>
+            <a href="https://github.com/gasper94/TwitterApp" target="_blank" rel="noopener noreferrer" class="inline-block bg-orange-500 rounded-lg px-3 py-1 text-md font-semibold text-white mr-2">Go to project</a>
            </div>
           </div>
         </a>
@@ -695,13 +601,13 @@
           <img style="width: 290px; height: 570px;" src= "UM%20-%20Welcome!_files/CarGallery.gif" >
           <h1>Car Collection<br>Xamarin(C#)</h1>
           <div class="flex justify-center px-6 py-4">
-            <a href="https://github.com/gasper94/XaraminGalleryApp" class="bg-orange-500 rounded-lg px-3 py-1 text-md font-semibold text-white mr-2">Go to project</a>
+            <a href="https://github.com/gasper94/XaraminGalleryApp" target="_blank" rel="noopener noreferrer" class="bg-orange-500 rounded-lg px-3 py-1 text-md font-semibold text-white mr-2">Go to project</a>
           </div>
  
         </div>
       </div>
   
-      <a class="arrow-button" href="#contact">▼</a>
+      <a class="arrow-button" href="#about">▲</a>
     </div>
 
     <!-- <a id="designs"></a>
